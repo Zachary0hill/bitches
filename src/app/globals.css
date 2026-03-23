@@ -59,6 +59,26 @@ body {
 		0 0 80px rgba(255, 45, 170, 0.2);
 }
 
+.holo-line.holo-line-caption {
+	font-family: var(--font-retro), monospace;
+	font-size: clamp(0.85rem, 2vw, 1.05rem);
+	font-weight: 600;
+	text-transform: none;
+	letter-spacing: 0.06em;
+	color: #ffffff;
+	text-shadow:
+		0 0 7px #ffffff,
+		0 0 15px #ffffff,
+		0 0 30px rgba(255, 255, 255, 0.8),
+		0 0 50px rgba(180, 77, 255, 0.5),
+		0 0 80px rgba(180, 77, 255, 0.3);
+}
+
+.holo-line-caption::before,
+.holo-line-caption::after {
+	display: none;
+}
+
 /* Chromatic aberration — red channel */
 .holo-line::before {
 	content: attr(data-text);

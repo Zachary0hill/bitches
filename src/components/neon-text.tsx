@@ -37,6 +37,11 @@ export function NeonText({ className }: { className?: string }) {
 				>
 					domain again
 				</p>
+				<p
+					className="holo-line holo-line-caption mt-6"
+				>
+					click the photo to save a puppy
+				</p>
 			</div>
 		</div>
 	);
