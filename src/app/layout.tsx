@@ -19,10 +19,19 @@ const pressStart = Press_Start_2P({
 });
 
 export const metadata: Metadata = {
-	title: 'Bitches',
+	title: 'read the url',
 	description: 'A visual landing page',
 	icons: {
 		icon: '/icon.png',
+	},
+	openGraph: {
+		title: 'read the url',
+		description: 'A visual landing page',
+		siteName: 'read the url',
+	},
+	twitter: {
+		title: 'read the url',
+		description: 'A visual landing page',
 	},
 };
 
