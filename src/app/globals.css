@@ -23,6 +23,12 @@ body {
 	overflow: hidden;
 }
 
+@media (max-height: 640px) {
+	body {
+		overflow-y: auto;
+	}
+}
+
 /* ── Holographic glitch text ── */
 
 .holo-text-container {
@@ -39,39 +45,47 @@ body {
 	letter-spacing: 0.05em;
 	text-transform: uppercase;
 	text-shadow:
-		0 0 6px var(--neon-cyan),
-		0 0 20px var(--neon-cyan),
-		0 0 50px var(--neon-purple),
-		0 0 90px rgba(180, 77, 255, 0.3);
+		0 0 4px var(--neon-cyan),
+		0 0 12px rgba(0, 240, 255, 0.5),
+		0 0 28px rgba(180, 77, 255, 0.2);
 }
 
 .holo-line-hero {
-	font-size: clamp(2.2rem, 5vw, 3.2rem);
+	font-size: clamp(1.8rem, 5vw, 3.2rem);
 }
 
 .holo-line-body {
-	font-size: clamp(1.5rem, 3.8vw, 2.1rem);
+	font-size: clamp(1.25rem, 3.5vw, 2.1rem);
 	color: var(--neon-pink);
 	text-shadow:
-		0 0 6px var(--neon-pink),
-		0 0 18px var(--neon-pink),
-		0 0 40px var(--neon-purple),
-		0 0 80px rgba(255, 45, 170, 0.2);
+		0 0 4px var(--neon-pink),
+		0 0 12px rgba(255, 45, 170, 0.5),
+		0 0 28px rgba(180, 77, 255, 0.15);
+}
+
+/* Subtler glitch on body lines */
+.holo-line-body::before {
+	left: 1px;
+	color: rgba(255, 0, 80, 0.25);
+	animation: glitch-r 8s steps(2, end) infinite;
+}
+
+.holo-line-body::after {
+	left: -1px;
+	color: rgba(0, 180, 255, 0.25);
+	animation: glitch-b 8s steps(2, end) infinite;
 }
 
 .holo-line.holo-line-caption {
 	font-family: var(--font-retro), monospace;
-	font-size: clamp(0.85rem, 2vw, 1.05rem);
+	font-size: clamp(0.7rem, 1.8vw, 1.05rem);
 	font-weight: 600;
 	text-transform: none;
 	letter-spacing: 0.06em;
 	color: #ffffff;
 	text-shadow:
-		0 0 7px #ffffff,
-		0 0 15px #ffffff,
-		0 0 30px rgba(255, 255, 255, 0.8),
-		0 0 50px rgba(180, 77, 255, 0.5),
-		0 0 80px rgba(180, 77, 255, 0.3);
+		0 0 4px rgba(255, 255, 255, 0.6),
+		0 0 10px rgba(180, 77, 255, 0.25);
 }
 
 .holo-line-caption::before,
@@ -144,8 +158,8 @@ body {
 
 .floating-card {
 	position: relative;
-	width: 220px;
-	height: 320px;
+	width: clamp(180px, 50vw, 220px);
+	aspect-ratio: 11 / 16;
 	transform-style: preserve-3d;
 	animation: float-mobile 6s ease-in-out infinite;
 }
@@ -153,6 +167,7 @@ body {
 @media (min-width: 768px) {
 	.floating-card {
 		width: 340px;
+		aspect-ratio: auto;
 		height: 480px;
 		transform: rotateY(22deg);
 		animation: float 6s ease-in-out infinite;

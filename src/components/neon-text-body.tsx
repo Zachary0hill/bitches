@@ -25,7 +25,7 @@ export function NeonTextBody({ className }: { className?: string }) {
 					domain again
 				</p>
 				<p
-					className="holo-line holo-line-caption mt-6"
+					className="holo-line holo-line-caption mt-4 md:mt-6"
 				>
 					click the photo to save a puppy
 				</p>
