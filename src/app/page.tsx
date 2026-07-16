@@ -3,8 +3,11 @@ import { FloatingCard } from '@/components/floating-card';
 import { NeonText } from '@/components/neon-text';
 import { NeonTextHero } from '@/components/neon-text-hero';
 import { NeonTextBody } from '@/components/neon-text-body';
+import { getFloatingCardAsset } from '@/lib/site-asset';
 
-export default function Home() {
+export default async function Home() {
+	const floatingCard = await getFloatingCardAsset();
+
 	return (
 		<>
 			<DottedSurface className="-z-10" />
@@ -14,9 +17,9 @@ export default function Home() {
 					<NeonTextHero className="md:hidden" />
 
 					<FloatingCard
-						imageSrc="/card-image.png"
-						imageAlt="Profile card"
-						href="https://www.zzmediastudio.com/"
+						imageSrc={floatingCard.imageSrc}
+						imageAlt={floatingCard.imageAlt}
+						href={floatingCard.href}
 					/>
 
 					<NeonTextBody className="md:hidden" />

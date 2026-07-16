@@ -1,7 +1,6 @@
 'use client';
 
 import { cn } from '@/lib/utils';
-import Image from 'next/image';
 import React from 'react';
 
 type FloatingCardProps = {
@@ -33,13 +32,11 @@ export function FloatingCard({
 					{/* Glass card body */}
 					<div className="glass-card">
 						<div className="card-image-container">
-							<Image
+							{/* eslint-disable-next-line @next/next/no-img-element */}
+							<img
 								src={imageSrc}
 								alt={imageAlt}
-								fill
-								className="object-cover rounded-2xl"
-								priority
-								sizes="(max-width: 768px) 300px, 420px"
+								className="h-full w-full object-cover rounded-2xl"
 							/>
 						</div>
 					</div>

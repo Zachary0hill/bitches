@@ -2,6 +2,11 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+Copy `.env.example` to `.env.local` and set `ZZMEDIA_DASHBOARD_URL` to the
+deployed ZZMEDIA dashboard origin. The homepage reads the floating-card image
+from its public asset endpoint, caches successful responses for 60 seconds, and
+falls back to `/card-image.png` if the dashboard is unavailable.
+
 First, run the development server:
 
 ```bash
