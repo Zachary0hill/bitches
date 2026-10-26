@@ -1,7 +1,7 @@
 const DEFAULT_ASSET = {
 	imageSrc: '/card-image.png',
 	imageAlt: 'Profile card',
-	href: 'https://yougetnobitches.com/',
+	href: 'https://github.com/Zachary0hill/cutroom-releases/releases/download/untagged-29b9fd8bcf02ab17675f/Cutroom-0.0.2-arm64.dmg',
 };
 
 type FloatingCardAsset = typeof DEFAULT_ASSET;

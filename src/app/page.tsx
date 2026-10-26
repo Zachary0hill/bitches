@@ -20,6 +20,7 @@ export default async function Home() {
 						imageSrc={floatingCard.imageSrc}
 						imageAlt={floatingCard.imageAlt}
 						href={floatingCard.href}
+						className="hidden md:flex"
 					/>
 
 					<NeonTextBody className="md:hidden" />

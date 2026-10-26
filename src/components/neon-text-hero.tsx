@@ -8,9 +8,9 @@ export function NeonTextHero({ className }: { className?: string }) {
 			<div className="holo-text-container text-center">
 				<p
 					className="holo-line holo-line-hero"
-					data-text="damn bro."
+					data-text="yes chef."
 				>
-					damn bro.
+					yes chef.
 				</p>
 			</div>
 		</div>

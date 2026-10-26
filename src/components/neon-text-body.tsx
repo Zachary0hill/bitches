@@ -6,28 +6,10 @@ export function NeonTextBody({ className }: { className?: string }) {
 	return (
 		<div className={cn('flex flex-col items-center justify-center', className)}>
 			<div className="holo-text-container text-center">
-				<p
-					className="holo-line holo-line-body"
-					data-text="anyways"
-				>
-					anyways
-				</p>
-				<p
-					className="holo-line holo-line-body"
-					data-text="look at the"
-				>
-					look at the
-				</p>
-				<p
-					className="holo-line holo-line-body"
-					data-text="domain again"
-				>
-					domain again
-				</p>
-				<p
-					className="holo-line holo-line-caption mt-4 md:mt-6"
-				>
-					click the photo to save a puppy
+				<p className="holo-line holo-line-caption holo-line-caption-lg mt-4 md:mt-6">
+					open this
+					<br />
+					on macbook
 				</p>
 			</div>
 		</div>

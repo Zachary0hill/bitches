@@ -14,33 +14,39 @@ export function NeonText({ className }: { className?: string }) {
 
 				<p
 					className="holo-line holo-line-hero"
-					data-text="damn bro."
+					data-text="yes chef."
 				>
-					damn bro.
+					yes chef.
 				</p>
 
 				<p
 					className="holo-line holo-line-body mt-6"
-					data-text="anyways"
+					data-text="click josh"
 				>
-					anyways
+					click josh
 				</p>
 				<p
 					className="holo-line holo-line-body"
-					data-text="look at the"
+					data-text="with cash"
 				>
-					look at the
+					with cash
 				</p>
 				<p
 					className="holo-line holo-line-body"
-					data-text="domain again"
+					data-text="to download"
 				>
-					domain again
+					to download
+				</p>
+				<p
+					className="holo-line holo-line-body"
+					data-text="my app"
+				>
+					my app
 				</p>
 				<p
 					className="holo-line holo-line-caption mt-6"
 				>
-					click the photo to save a puppy
+					do this on macbook pls
 				</p>
 			</div>
 		</div>
