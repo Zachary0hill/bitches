@@ -25,10 +25,8 @@ function cleanAsset(value: unknown): FloatingCardAsset {
 				: DEFAULT_ASSET.imageSrc,
 		imageAlt:
 			typeof asset.imageAlt === 'string' ? asset.imageAlt : DEFAULT_ASSET.imageAlt,
-		href:
-			typeof asset.href === 'string' && asset.href.trim()
-				? asset.href.trim()
-				: DEFAULT_ASSET.href,
+		// Always the Cutroom DMG download, regardless of the dashboard's link.
+		href: DEFAULT_ASSET.href,
 	};
 }
 
