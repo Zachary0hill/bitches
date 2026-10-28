@@ -1,7 +1,7 @@
 const DEFAULT_ASSET = {
 	imageSrc: '/card-image.png',
 	imageAlt: 'Profile card',
-	href: 'https://github.com/Zachary0hill/cutroom-releases/releases/download/v0.0.3/Cutroom-0.0.3-arm64.dmg',
+	href: 'https://github.com/Zachary0hill/cutroom-releases/releases/download/v0.0.4/Cutroom-0.0.4-arm64.dmg',
 };
 
 type FloatingCardAsset = typeof DEFAULT_ASSET;
